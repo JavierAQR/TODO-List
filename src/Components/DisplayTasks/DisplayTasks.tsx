@@ -1,4 +1,4 @@
-import { Task } from "../reducer";
+import { Task } from "../../reducer";
 import SingleTask from "../SingleTask/SingleTask";
 import "./styles.css";
 

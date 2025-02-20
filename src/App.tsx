@@ -1,9 +1,9 @@
 import { FormEvent, useReducer, useState } from "react";
 import "./App.css";
-import FormAddTask from "./FormAddTask/FormAddTask";
-import Header from "./Header/Header";
+import FormAddTask from "./Components/FormAddTask/FormAddTask";
+import Header from "./Components/Header/Header";
 import { initialState, reducer } from "./reducer";
-import DisplayTasks from "./DisplayTasks/DisplayTasks";
+import DisplayTasks from "./Components/DisplayTasks/DisplayTasks";
 
 function App() {
   const [todoText, setTodoText] = useState("");
