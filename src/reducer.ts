@@ -27,12 +27,19 @@ interface DeleteTodoAction {
   };
 }
 
-export type Action = AddTodoAction | ToggleIsCompletedAction | DeleteTodoAction;
+interface DeleteAll {
+  type: "DELETE_ALL";
+}
+
+export type Action =
+  | AddTodoAction
+  | ToggleIsCompletedAction
+  | DeleteTodoAction
+  | DeleteAll;
 
 export const initialState: Task[] = [];
 
 export const reducer = (state: Task[], action: Action): Task[] => {
-
   if (action.type === "ADD_TODO") {
     const { name } = action.payload;
 
@@ -63,18 +70,21 @@ export const reducer = (state: Task[], action: Action): Task[] => {
     return newState;
   }
 
-  if (action.type === 'DELETE_TODO') {
-   const { id } = action.payload;
+  if (action.type === "DELETE_TODO") {
+    const { id } = action.payload;
 
-   const newState = state.filter((singleTODO) => {
-    if (singleTODO.id !== id){
-      return singleTODO;
-    }
-   });
-   
-   return newState;
+    const newState = state.filter((singleTODO) => {
+      if (singleTODO.id !== id) {
+        return singleTODO;
+      }
+    });
+
+    return newState;
   }
 
+  if (action.type === "DELETE_ALL") {
+    state = [];
+  }
 
   return state;
 };

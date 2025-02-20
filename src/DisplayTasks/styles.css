@@ -5,3 +5,12 @@
   padding: 10px;
   margin-bottom: 2rem;
 }
+
+.btn-limpiar {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid white;
+  color: #ad5389;
+  font-weight: 750;
+  padding: 10px;
+  cursor: pointer;
+}

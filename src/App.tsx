@@ -50,6 +50,12 @@ function App() {
     });
   };
 
+  const handleDeleteAll = () => {
+    dispatch({
+      type: "DELETE_ALL",
+    });
+  };
+
   return (
     <>
       <Header handleCountComplete={handleCountComplete} />
@@ -62,6 +68,7 @@ function App() {
         state={state}
         toggle={handleToggleTask}
         handleDeleteTask={handleDeleteTask}
+        handleDeleteAll={handleDeleteAll}
       />
     </>
   );
