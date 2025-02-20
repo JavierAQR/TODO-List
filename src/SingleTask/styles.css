@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 20px;
+}
+
+.task h1 {
+  font-size: 30px;
+
+  color: white;
+}
+
+.task button {
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.task.complete {
+  background-color: rgba(17, 8, 22, 0.335);
+}

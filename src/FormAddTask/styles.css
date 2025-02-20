@@ -1,0 +1,32 @@
+form {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+form input {
+  border-radius: 25px;
+  padding: 10px;
+  border: none;
+}
+
+form input[type="text"] {
+  font-size: 17px;
+  width: 20rem;
+  margin-right: 20px;
+  outline-color: #ad5389;
+}
+
+form input[type="submit"] {
+  cursor: pointer;
+  background-color: #ad5389;
+  color: white;
+  height: 50px;
+  width: 90px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 5px 5px 1px #55284381;
+}

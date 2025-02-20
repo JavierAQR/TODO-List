@@ -1,0 +1,7 @@
+.taskList {
+  border: 1px solid white;
+  width: 50rem;
+  min-height: 65vh;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
